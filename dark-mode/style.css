@@ -1,0 +1,38 @@
+.dark-mode {
+  background: #333;
+  color: #fff;
+}
+.container-button {
+  position: relative;
+}
+
+.container-button .toggle {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 90px;
+  height: 50px;
+  border-radius: 30px;
+  background: #444;
+  transition: 0.3s;
+}
+
+.container-button .toggle.active {
+  background: cornflowerblue;
+}
+
+.toggle .toggle-button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle.active .toggle-button {
+  left: 45px;
+}
