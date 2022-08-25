@@ -9,11 +9,12 @@ function darkmode() {
     console.log('Light mode')
     theme = 'LIGHT'
   }
-  // save to localStorage
+  // save to localStorage option mode
   localStorage.setItem('PageTheme', JSON.stringify(theme))
-  // ensure you convert to JSON like i have done -----JSON.stringify(theme)
+  // ensure you convert to JSON with -----JSON.stringify(theme)
 }
 
+// Set a range to check if the class is
 setInterval(() => {
   let toggleButton = document.querySelector('.toggle')
   let GetTheme = JSON.parse(localStorage.getItem('PageTheme'))
